@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador de Reservas</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Ephesis&family=Montserrat:wght@100&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="img-logo">
+        <img src="img/lg500.png" class="img-logo" width="450px" alt="">
+    </div>
+    <h3 class="text-center my-5 stitulo">Reserva con nosotros</h3>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-reserva">
+                <form id="nueva-reserva">
+                    <legend class="mb-4 titulo-tabla">Datos de la Reservación</legend>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label text-form">Nombre:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label text-form">Número de personas:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="number" id="npersonas" name="npersonas" class="form-control"  placeholder="Número de personas">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label text-form">Teléfono:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="telefono" name="telefono" class="form-control"  placeholder="Número de Teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label text-form">Fecha:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="fecha" name="fecha" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label text-form">Hora:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="time" id="hora" name="hora" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label text-form">Evento:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <textarea id="evento" name="evento" class="form-control" rows="1"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-primary w-100 d-block">Reserva ahora</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 id="administra" class="mb-4 titulo-tabla">Administra tu Reservación</h2>
+                <ul id="reservas" class="list-group lista-reservas"></ul>
+            </div>
+
+    
+           <div class="col-md-12 contacto">
+               <h3 class="stitulo">Visitanos</h3>
+               <br>
+               <p class="contax">Calle Diego de Mazariegos No. 29 <br> San Cristobal de las Casas Chiapas. México</p>
+           </div>  
+            
+
+            <div class="maps" id="map"></div>
+               
+            
+            
+            
+            
+        </div> <!--.row-->
+    </div><!--.container-->
+
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+</body>
+</html>

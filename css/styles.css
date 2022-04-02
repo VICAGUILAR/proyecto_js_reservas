@@ -1,0 +1,97 @@
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(../img/bg.jpg)
+
+}
+
+.stitulo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.titulo-tabla {
+  font-weight: bold;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: rgba(10, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(10, 0, 0, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(10, 0, 0, 0.18);
+
+}
+header {
+  margin-top: 3rem;
+}
+header h1 {
+  color: white;
+}
+
+.text-form{
+  font-weight: bold;
+  color: #c19d60;
+  font-family: 'Montserrat', sans-serif;
+}
+.lista-reservas .reserva {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+.lista-reservas .reserva:last-of-type {
+  border-bottom: 0;
+}
+
+.lista-reservas .reserva p {
+  margin:0;
+}
+
+.lista-reservas .reserva button {
+  margin-top: 1rem!important;
+  
+}
+.lista-reservas .reserva span {
+  font-weight: bold;
+}
+
+
+.img-logo{
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+ #map {
+	height: 500px;
+	width: 100%;
+}
+
+.maps{
+  margin-top: 50px;
+}
+
+.contacto{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contax{
+  font-weight: bold;
+  color: #c19d60;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
